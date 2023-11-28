@@ -1,0 +1,245 @@
+:root {
+    --primary: #13C5DD;
+    --secondary: #354F8E;
+    --light: #EFF5F9;
+    --dark: #1D2A4D;
+} 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+.btn {
+    font-weight: 700;
+    transition: .5s;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0 8px 6px -6px #555555;
+    -moz-box-shadow: 0 8px 6px -6px #555555;
+    box-shadow: 0 8px 6px -6px #555555;
+}
+
+.btn-primary {
+    color: #FFFFFF;
+}
+
+.btn-square {
+    width: 36px;
+    height: 36px;
+}
+
+.btn-sm-square {
+    width: 28px;
+    height: 28px;
+}
+
+.btn-lg-square {
+    width: 46px;
+    height: 46px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+}
+
+.back-to-top {
+    position:center;
+    display: none;
+    right: 30px;
+    bottom: 0;
+    border-radius: 90% 90% 0 0;
+    z-index: 99;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-family: 'Jost', sans-serif;
+    position: relative;
+    margin-left: 30px;
+    padding: 30px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color:var(--dark);
+    outline: none;
+    transition: .5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+@media (min-width: 962px) {
+    .navbar-light .navbar-nav .nav-link::before {
+        background-image:auto;
+        background-repeat: no-repeat; 
+        background-position: -10px -30px;
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 5px;
+        bottom: 0;
+        left: 50%;
+        background: var(--primary);
+        transition: .5s;
+    }
+
+    .navbar-light .navbar-nav .nav-link:hover::before,
+    .navbar-light .navbar-nav .nav-link.active::before {
+        width: 100%;
+        left: 0;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-light .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+}
+
+.hero-header {
+    background: url(../img/Hero.jpg) top right no-repeat;
+    background-size:cover;  
+    height:500px;
+  }
+
+
+  section  {
+    height: 80vh;
+    width: 100%;
+    display:table;
+    place-items: center;
+    
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+    height:100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, var(--primary) 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  h2 {
+    font-size: 80px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+    position:center;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+    position:center;
+  }
+  p {
+    color: #575a7b;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    text-align:justify;
+  }
+  .icon-wrapper {
+    background-color: #354F8E;;
+    position:relative;
+    margin: auto;
+    font-size: 40px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .card:hover {
+    background-position:50%;
+  }
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #354F8E;;
+  }
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width:768px) {
+    section {
+      padding: 0 3em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 892px) {
+    section {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+  
+  /*Nosotros*/ 
+
+.card-img-log{
+  position:relative;
+  display: block;
+  width: 300px;
+  height:90px;
+  font-size: 0px;
+  background: no-repeat;
+  background-size: 75% 75%; 
+  margin-top: 2px;
+  z-index: 30;
+  cursor: pointer;
+}
+ /*Informacion del paciente*/
+ .nav-p-item-dropdown{
+
+	width: 70px;
+	height: 66px;
+	margin-right: 0px;
+
+}
+
+.containner-fluid{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-inline-start: auto;
+  padding:auto;
+  margin: 50px auto;
+
+}
+
+.error {
+color : salmon;
+}
+

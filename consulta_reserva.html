@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VETERINARIA MI MASCOTA</title>
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@700&display=swap" rel="stylesheet">
+
+
+  <!-- Icon Font Styles -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Librerias Styles -->
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+  <!-- Bootstrap Styles -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Style -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navbar (MENUS DE NAVEGACION)-->
+  <div class="container-menu-inicio">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-white navbar-light py-3 py-lg-0">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <img src="vv" class="card-img-log" width="0%" height="" float="">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto py-0">
+            <a href="index.html" class="nav-item nav-link active">Home</a>
+            <a href="servicios.html" class="nav-item nav-link">Servicios</a>
+            <a href="" class="nav-item nav-link">Carrito De Compras</a>
+            <a href="nosotros.html" class="nav-item nav-link">Nuestra clinica</a>
+            <a href="especialidades.html" class="nav-item nav-link">Especialidades Medic@s</a>
+            <a href="contacto.html" class="nav-item nav-link">Contacto</a>
+          </div>
+          <div class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Servicios en
+              Línea</a>
+            <div class="dropdown-menu m-0">
+              <a href="agenda_horas.html" class="dropdown-item">Reserva de horas</a>
+              <a href="index.html" class="dropdown-item"><i class="bi bi-box-arrow-right"></i> Cerrar sesión </a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+  </nav>
+  </div>
+  </div>
+  <!-- Navbar End -->
+
+  <section class="container-fluid  bg-light d-flex justify-content-center align-items-center vh-10">
+
+
+    <!-- Formulario agendar hora-->
+
+    <div class="containner-fluid py-5">
+      <div class="col-lg-6">
+        <div class="bg-light text-center rounded p-7">
+          <h1 class="mb-5">Ver hora reservada</h1>
+
+          <form class="form-floating" id="consultarHora">
+            <button class="btn btn-primary w-100 py-3" type="submit"> Buscar Hora</button>
+            <br><br>
+
+            <div class="row g-3">
+              <div class="col-12 col-sm-6">
+                <select class="form-select bg-white border-0" id="especialidad"  style="height:65px;">
+                  <option selected>Seleccione especialidad</option>
+                  <option value="1">Oncología</option>
+                  <option value="2">Oftalmología</option>
+                  <option value="3">Cardiología</option>
+                  <option value="4">Traumatología</option>
+                  <option value="5">Gastroenterología</option>
+                  <option value="6">Medicina Felina</option>
+                  <option value="7">Ginecología y Reproducción</option>
+                  <option value="8">Dermatología y Endocrinología</option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-6">
+                <select class="form-select bg-white border-0" id="especialista" style="height: 55px;">
+                  <option selected>Seleccione especialista</option>
+                  <option value="1">Maria </option>
+                  <option value="2">Ana </option>
+                  <option value="3">Asstrid </option>
+                  <option value="4">Roma </option>
+                  <option value="5">Jaime </option>
+                  <option value="6">Fran </option>
+                </select>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="date" data-target-input="nearest">
+                  <input type="text" class="form-control bg-white border-0 datetimepicker-input" id="fechas" 
+                    placeholder="Seleccione Fecha" data-target="#date" data-toggle="datetimepicker"
+                    style="height: 55px;">
+                </div>
+              </div>
+              <div class="col-12 col-sm-6">
+                <div class="time" data-target-input="nearest">
+                  <input type="text" class="form-control bg-white border-0 datetimepicker-input" id="horas"
+                    placeholder="Seleccione Hora" data-target="#time" data-toggle="datetimepicker"
+                    style="height: 55px;">
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- Formulario Agendar hora -->
+
+  <!-- Footer  -->
+  <div class="container-fluid bg-dark text-light mt-5 py-5">
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">
+            Contáctanos</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>
+            Santiago</p>
+          <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>contacto@vmimascota</p>
+          <p class="mb-0"><i class="fa fa-phone-alt text-primary me-3"></i>+57 3146567245</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Enlaces
+            populares</h4>
+          <div class="d-flex flex-column justify-content-start">
+            <a class="text-light mb-2" href="index.html"><i class="fa fa-angle-right me-2"></i>Home</a>
+            <a class="text-light mb-2" href="nosotros.html"><i class="fa fa-angle-right me-2"></i>Sobre nosotros</a>
+            <a class="text-light mb-2" href="servicios.html"><i class="fa fa-angle-right me-2"></i>Nuestros
+              Servicios</a>
+            <a class="text-light" href="contacto.html"><i class="fa fa-angle-right me-2"></i>Contáctenos</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Trabaja
+            con Nosotros</h4>
+          <p class="mb-2"><i class="fa fa-map-marker-alt text-primary me-3"></i>LOS PETUCHES DE LICA - MORAVIA
+            Santiago</p>
+          <p class="mb-2"><i class="fa fa-envelope text-primary me-3"></i>contacto@vmimascota</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h4 class="d-inline-block text-primary text-uppercase border-bottom border-5 border-secondary mb-4">Enterate
+            de todo</h4>
+          <h6 class="text-primary text-uppercase mt-4 mb-3">Siguenos</h6>
+          <div class="d-flex">
+            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+              href=""><i
+                class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2"
+              href=""><i
+                class="fab fa-linkedin-in"></i></a>
+            <a class="btn btn-lg btn-primary btn-lg-square rounded-circle"
+              href=><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/tempusdominus/js/moment.min.js"></script>
+  <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+  <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+  <script src="js/validacion_consultar_Hora.js"></script>
+  </s>
+
+</html>
